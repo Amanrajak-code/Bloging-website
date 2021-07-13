@@ -2,7 +2,6 @@ const express = require('express')
 const path = require('path')
 const app = express()
 const port = 3000
-const hostname = '103.88.58.184'
 var ip;
 app.use(express.static(path.join(__dirname, 'public')));
 app.get('/', (req, res)=>{
