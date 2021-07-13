@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shrilet</title>
+    <link rel="stylesheet" href="css/navcss.css">
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="flat">
+            <div class="anav"><img id="anavbtn" src="icon/menu.svg" onclick=" togle()" alt="hammbarger"></div>
+            <div Id="logo"> Shrilet </div>
+            <div class="cnav">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/blog">Blog</a></li>
+                    <li><a href="/contact">Contact us</a></li>
+                    <li><a href="/about">About</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="anav">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/blog">Blog</a></li>
+                <li><a href="/contact">Contact us</a></li>
+                <li><a href="/about">About</a></li>
+            </ul>
+        </div>
+    </nav>
+    <header>
+        <!-- section for ads in future. -->
+    </Header>
+
+    <section>
+        <div class="contact">
+            <H2>Contact us:</H2>
+            <p>
+                If you have an article and your want to post it on our website(Shrilet.in). You can contact us through
+                E-mail.
+                You can contact us on. either you want to give me any feedback you can contact me through Instagram,
+                Facebook and my E-mail address amanrajak7410@gmail.com <a href="#"
+                    target="_blank">amanrajak7410@gmail.com </a> and e-mail your article related any thing.
+            </p>
+            <H2>Your can also follow us on:</H2>
+            <div class="icon">
+                <a href="https://www.instagram.com/codecuts/" target="_blank"><img src="icon/fb.svg" alt="facebook_icon"></a>
+                <a href="https://www.instagram.com/codecuts/" target="_blank"><img src="icon/insta.png"
+                        alt="instagram_icon"></a>
+                <!-- <a href="#"><img src="" alt=""></a> -->
+            </div>
+            <h2>Community: </h2>
+            <div class="icon" id="com">
+                <a href="#"><img src="icon/tele.png" alt="icon of telegram"></a>
+            </div>
+            <span>*The Contact form is not working currently your can contact on any other platform.</span>
+            <form action="#">
+                <input type="text" id="name" placeholder="Enter your name" required>
+                <input type="email" id="email" placeholder="Enter your E-mail" required >
+                <textarea  id="fedback"  cols="30" rows="10" placeholder="Give your sugustion or fedback"></textarea>
+                <button id="btn"  value="submit">Submit</button>
+
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div>
+            <span>&#169; Copyright 2021 and 2022 | All copyright resrved by Shrilet.in |</span> <span> <a href="#"> Term
+                    and condintion </a></span>
+        </div>
+    </footer>
+    <script>
+        function togle() {
+            let anav = document.getElementById("anav");
+            let anavbtn = document.getElementById("anavbtn");
+            if (anav.style.display === 'none') {
+                anav.style.display = 'block';
+                anavbtn.src = "icon/cross.svg";
+
+            }
+            else {
+                anav.style.display = 'none';
+                anavbtn.src = "icon/menu.svg";
+
+            }
+        }
+    </script>
+</body>
+
+</html>

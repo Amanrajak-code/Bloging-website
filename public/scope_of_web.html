@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will there be scope of webdevlopment in future</title>
+    <link rel="stylesheet" href="css/scope_of_web.css">
+    <link rel="stylesheet" href="css/navcss.css">
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="flat">
+        <div class="anav"><img id= "anavbtn" src="icon/menu.svg" onclick = " togle()"alt="hammbarger"></div>
+        <div Id="logo"> Shrilet </div>
+        <div class="cnav">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/blog">Blog</a></li>
+                <li><a href="/contact">Contact us</a></li>
+                <li><a href="/about">About</a></li>
+            </ul>
+        </div>
+        </div>
+        <div id="anav">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/blog">Blog</a></li>
+                <li><a href="/contact">Contact us</a></li>
+                <li><a href="/about">About</a></li>
+            </ul>
+         </div>
+</nav>
+<header>
+   <!-- section for ads in future. -->
+</Header>
+
+    <section>
+        <!-- blankdiv -->
+        <div></div>
+        <!-- blog writting -->
+        <div id="blog">
+            <h2 id="blogt">Will there be any scope of webdevlopment coder in future?</h2>
+            <p id="blogi"> Relesed Date: 1 july 2021 | Written by: Aman rajak</p>
+            <img src="image/webdev.jpg" alt="webdevlopment image">
+            <p id="blogd">In my view, I don't think that there is any future of webdevlopment after 8 to 10 year. There are many website built by which user can make there own website. </p>
+        </div>
+        <!-- Other blog links -->
+        <div id="otherlinks">
+            <h3>Other Blog links</h3>
+        </div>
+    </section>
+    <footer>
+        <div>
+            <span>&#169; Copyright 2021 and 2022 | All copyright resrved by Shrilet.in |</span> <span> <a href="#"> Term and condintion </a></span>
+        </div>
+    </footer>
+    <script>
+        function togle(){
+            let anav = document.getElementById("anav");
+            let anavbtn = document.getElementById("anavbtn");
+            if(anav.style.display === 'none'){
+                anav.style.display = 'block';
+                anavbtn.src = "icon/cross.svg";
+    
+            }
+            else{
+                anav.style.display = 'none';
+                anavbtn.src = "icon/menu.svg";
+    
+            }
+        }
+    </script>
+
+</body>
+
+</html>

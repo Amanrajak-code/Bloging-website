@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+/*Temporary css for missing section*/
+header{
+    background-color: black;
+}
+header p{
+    color: white;
+    text-align:center;
+    font-size: 40px;
+}
+#booklist{
+    display: grid;
+    grid-template-columns: 250px auto auto;
+    margin: 10px;
+
+}
+ul li{
+    list-style: none;
+    padding: 3px;
+    margin: 1px;
+    text-align: center;
+}
+#booklist a{
+    text-decoration: none;
+    color:brown;
+    font-family: sans-serif;
+}
+h3{
+    text-align: center;
+    color: brown;
+    font-family: sans-serif;
+    padding: 3px 4px;
+}
+h4{
+    padding: 2px 5px;
+
+}
+/* span{
+    color: red;
+} */
+#navigation{
+    border: 2px solid black;
+    border-width: 0px 0px 2px 0px;
+    border-radius: 3px;
+    margin: 5px 8px;
+    padding: 5px;
+}
+#navdis{
+    margin: 5px 8px;
+    padding: 5px;
+    border: 1px dashed black;
+}
+#navdis a{
+    border: 1px solid brown;
+    border-radius: 3px;
+    padding: 3px;
+    margin: 2px;
+}
+#navdis p{
+    padding: 4px;
+    margin: 5px;
+    font-family: sans-serif;
+}
+.books{
+    margin: 5px;
+    border:2px solid black;
+    border-radius: 4px;
+    padding: 5px 8px;
+    display: flex;
+}
+.books img{
+    height: 120px;
+    width: 80px;
+}
+@media only screen and (max-width: 700px) {
+    #booklist{
+        /* grid-template-rows: 300px auto 300px; */
+        grid-template-columns: none;
+        grid-template-rows: auto auto 300px;
+
+    }
+}

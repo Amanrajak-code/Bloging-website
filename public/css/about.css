@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* .contact{
+    margin: 8px 10px;
+    padding: 5px 8px;
+    text-align: center;
+    height: 500px;
+    width: 715px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    box-shadow: grey 3px 4px 5px 0px;
+} */
+section{
+    padding: 5% 10%;
+    background-color: rgba(255, 99, 71, 0.7);
+
+    /* background-image: url("font.jpg");
+    background-repeat: no-repeat
+    background-position: center;
+    background-size: cover; */
+}
+
+.about{
+    height: 500px;
+    /* width: 715px; */
+    /* border: 1px solid gray; */
+    /* border-radius: 5px; */
+    /* box-shadow: grey 3px 4px 5px 0px; */
+    margin: 10px auto;
+    padding: 5px 20px;
+    font-family: sans-serif;
+}
+.about h2{
+    font-family: cursive;
+    margin: 2px 5px;
+}
+.about ul{
+    padding: 4px 30px;
+}
+.about p{
+    /* text-align: center; */
+    margin:  2px 5px;
+    font-size: 20px;
+}
+.about p a {
+    text-decoration: none;
+}
+@media only screen and (max-width: 700px) {
+    section{
+        /* grid-template-columns: none; */
+        padding:5px;
+    }
+}

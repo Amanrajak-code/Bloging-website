@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shrilet</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/indexnav.css">
+</head>
+<body>
+    <nav id="navbar">
+        <div id="flat">
+        <div id= "anavbtn"><img id="abtn" src="icon/menu.svg" onclick = " togle()"alt="hammbarger"></div>
+        <div Id="logo"> Codecuts </div>
+        <div class="cnav">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/blog">Blog</a></li>
+                <li><a href="/contact">Contact us</a></li>
+                <li><a href="/about">About</a></li>
+            </ul>
+        </div>
+        </div>
+        <div id="anav">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/blog">Blog</a></li>
+                <li><a href="/contact">Contact us</a></li>
+                <li><a href="/about">About</a></li>
+            </ul>
+         </div>
+</nav>
+    <header>
+
+         <section class="headline">
+            <div id="content">
+            <h2>Welcome to Code cuts</h2>
+            <p>
+                We are ready to cut the code. <br> Let minimize the code.
+            </p>
+            <div id="hlbtn"><a href="#tile_sec">Explore</a></div>
+            </div>
+        </section>
+    </header>
+    <section>
+        <h1> Look the tiles</h1>
+        <div id="tile_sec">
+        <div class="tile">
+            <a href="scope_of_web.html"> <img src="image/general.png" alt="computer">
+            <h1> General querry</h1></a>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam labore quos culpa ad praesentium nihil minima quo voluptas. Recusandae nulla vero labore facere autem!
+            </p>
+        </div>
+        <div class="tile">
+            <a href="/booklinks"> <img src="image/book.png" alt="computer">
+            <h1>Book links</h1></a>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam labore quos culpa ad praesentium nihil minima quo voluptas. Recusandae nulla vero labore facere autem!
+            </p>
+        </div>
+        <div class="tile">
+            <a href="comingsoon.html"> <img src="image/c++.png" alt="computer">
+            <h1>C++ Projects</h1></a>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam labore quos culpa ad praesentium nihil minima quo voluptas. Recusandae nulla vero labore facere autem!
+            </p>
+        </div>
+        <div class="tile">
+            <a href="comingsoon.html"> <img src="image/hakerrank.png" alt="computer">
+             <h1> Hacker rank solution</h1> </a>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam labore quos culpa ad praesentium nihil minima quo voluptas. Recusandae nulla vero labore facere autem!
+            </p>
+        </div>
+        </div>
+    </section>
+    <footer>
+        <div>
+            <span>&#169; Copyright 2021 and 2022 | All copyright resrved by Shrilet.in |</span> <span> <a href="about.html"> Term and condintion </a></span>
+        </div>
+    </footer>
+<script>
+    function togle(){
+        let anav = document.getElementById("anav");
+        let abtn = document.getElementById("abtn");
+        if(anav.style.display === 'none'){
+            anav.style.display = 'block';
+            abtn.src = "icon/cross.svg";
+
+        }
+        else{
+            anav.style.display = 'none';
+            abtn.src = "icon/menu.svg";
+
+        }
+    }
+</script>
+   
+</body>
+
+</Html>

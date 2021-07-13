@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shrilet</title>
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/navcss.css">
+</head>
+<body>
+    <nav id="navbar">
+        <div id="flat">
+        <div class="anav"><img id= "anavbtn" src="icon/menu.svg" onclick = " togle()"alt="hammbarger"></div>
+        <div Id="logo"> Shrilet </div>
+        <div class="cnav">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/blog">Blog</a></li>
+                <li><a href="/contact">Contact us</a></li>
+                <li><a href="/about">About</a></li>
+            </ul>
+        </div> 
+        </div>
+        <div id="anav">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/blog">Blog</a></li>
+                <li><a href="/contact">Contact us</a></li>
+                <li><a href="/about">About</a></li>
+            </ul>
+         </div>
+</nav>
+<header>
+   <!-- section for ads in future. -->
+</Header>
+
+ <section>
+     <div class="about">
+         <h2>About:</h2>
+         <p>Shrilet is a bloging website. It is built in 2021. It is our first start up. Our team are always ready to help you. we take one step towards india to informate people or help people to solve there technical querry.</p>
+         <h4>our servises</h4>
+         <ul>
+          <li>Technical problems</li>
+          <li>We provids c++ projects and its code.</li>
+          <li>Hacker rank solutions</li>
+          <li>External links which is usefull to you</li>   
+        </ul>
+        <p> we are trying to get as much information as possible so, in future we provide. At tis time se are improving our selves</p>
+        
+     </div>
+     <div></div>
+ </section>
+ <footer>
+    <div>
+        <span>&#169; Copyright 2021 and 2022 | All copyright resrved by Shrilet.in |</span> <span> <a href="#"> Term and condintion </a></span>
+    </div>
+</footer>
+<script>
+function togle(){
+    let anav = document.getElementById("anav");
+    let anavbtn = document.getElementById("anavbtn");
+    if(anav.style.display === 'none'){
+        anav.style.display = 'block';
+        anavbtn.src = "icon/cross.svg";
+
+    }
+    else{
+        anav.style.display = 'none';
+        anavbtn.src = "icon/menu.svg";
+
+    }
+}
+</script>
+</body>
+
+</html>
